@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>My Health</title>
+        <link rel="icon" type="image/x-icon" href="Images/myHealthFavicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="StylesheetsForIndividualPages/aboutUs.css">
+        <link rel="stylesheet" href="StylesheetsForIndividualPages/listening page.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="High-quality medical supplies, advanced medical devices, healthcare essentials, professional diagnostic equipment, affordable patient care products.">
+        <meta name="keywords" content="medical supplies, medical devices, healthcare products, diagnostic equipment, patient care, medical instruments, healthcare essentials, professional medical tools, affordable medical solutions, medical technology">
+        <meta name="author" content="Wasif Asi">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/5eacabb50d.js" crossorigin="anonymous"></script>
+        <style>
+          
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+          
+            <nav> 
+              <div class="topnav">
+                  <div class="left-nav">
+                  <a href="home.html"><img src="Images/myHealthFavicon.png" alt = "My Health" class="main-logo">
+                  <span class="myHealth">MyHealth</span></a>
+                  </div>
+                  
+                  <div class="right-nav" id="right-nav">
+                    <a href="home.html" class="main-pages">Home</a>
+                    <a href="aboutUs.html" class="main-pages">About Us</a>
+                    <a href="products.html" class="main-pages">Products</a>
+                    <a href="Listening page.html" class="main-pages  active-link">Reviews</a>
+                    <a href="quiz.html" class="main-pages">Quiz</a>
+                    <a href="gallery.html" class="main-pages">Gallery</a>
+                    <a href = "signUp.html" class="main-pages googleIcon">
+                      <span class="material-symbols-outlined">
+                      account_circle
+                      </span>
+                    </a>
+                    <button id="shopping-cart" onclick="openModal('cart')" class="shopping-cart googleIcon">
+                      <span class="material-symbols-outlined">
+                        shopping_cart
+                      </span>
+                    </button>
+                    <a href="javascript:void(0);" class="icon" onclick="menuBar()">
+                      <span class="material-symbols-outlined">
+                        menu
+                      </span>
+                    </a>
+                  </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+
+
+        <main>
+          <section>
+            <!-- heading -->
+            <div class="header">
+              <h1>Reviews</h1>
+              <div>
+                <!-- Toggle button for light/dark theme -->
+                <button class="toggle-button" onclick="toggleTheme()">Dark Theme</button>
+             </div>
+            </div>
+
+            
+
+            
+            <!-- review-container -->
+            <div class="review-container">
+
+              <!-- box 1 -->
+              <div class="review-box">
+
+                <!-- top   -->
+                <div class="box-top">
+
+                  <!-- profile -->
+                  <div class="profile">
+                      <!-- image -->
+                      <div class="profile-img">
+                        
+                      </div>
+
+                      <!-- name and user  -->
+                      <div class="name-user">
+                        <strong id="name"></strong>
+                        <span id="ID"></span>
+                      </div>
+                  </div>
+
+                  <!-- reviews------ -->
+                  <div class="reviews">
+                    
+                  </div>
+                </div>
+
+                <!-- comments -->
+                <div id="comment">
+                  <p>.</p>
+                </div >
+              </div>
+
+              
+
+            </div>
+          </section>
+
+
+        
+
+        </main>
+
+
+
+
+
+        <footer>
+          <article>
+            <h2>Subscribe to receive our Monthly Newsletter.</h2>
+            <button>
+              <p><a href="subscription.html">Subscribe</a></p>
+              <span class="material-symbols-outlined"> trending_flat </span>
+            </button>
+          </article>
+    
+          <section class="top">
+            <img src="Images/myHealthFavicon.png" alt="main-logo"/>
+            <ul>
+              <li>
+                <h3>Resources</h3>
+                <a href="#">Usage</a>
+                <a href="#">Docs</a>
+                <a href="#">Support</a>
+                <a href="Page-Editors/student4.html">Page Editor</a>
+              </li>
+              <li>
+                <h3>Company</h3>
+                <a href="aboutUs.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Partnerships</a>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <h3>Quick Contact</h3>
+                <a><i class="fa fa-phone fa-xs" aria-hidden="true"></i> 717719753</a>
+                <a><i class="fa fa-envelope fa-xs" aria-hidden="true"></i> myhealth@abc.lk</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Colombo 06</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Sri Lanka</a>
+              </li>
+              <li>
+                <h3>Find Us On</h3>
+                <a><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a><i class="fa-brands fa-github"></i> Github</a>
+              </li>
+            </ul>
+          </section>
+    
+          <section class="bottom">© 2024 MyHealth</section>
+        </footer>
+       
+
+
+
+        <script>
+          function myOnClick(){
+            document.location.href="subscription page.html"
+          }
+
+          
+
+          // Function to toggle between light and dark themes
+          function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            const button = document.querySelector('.toggle-button');
+            if (isDarkMode) {
+                button.textContent = 'Light Theme';
+                button.style.backgroundColor = '#ffffff';
+                button.style.color = '#333333';
+            } else {
+                button.textContent = 'Dark Theme';
+                button.style.backgroundColor = '#333333';
+                button.style.color = '#ffffff';
+            }
+        }
+
+
+          // Function to load and parse XML file
+          function loadXMLDoc() {
+              let xhttp;
+              if (window.XMLHttpRequest) {
+                  xhttp = new XMLHttpRequest();
+              } else {
+                  // For older IE browsers
+                  xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+              }
+              xhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                      displayXML(this);
+                  }
+              };
+              xhttp.open("GET", "Reviews.xml", true);
+              xhttp.send();
+          }
+
+          // Function to display XML content
+          function displayXML(xml) {
+              const xmlDoc = xml.responseXML;
+              const reviews = xmlDoc.getElementsByTagName("review");
+              // Clear previous reviews if any
+              document.querySelector(".review-container").innerHTML = "";
+              // Loop through each review
+              for (let i = 0; i < reviews.length; i++) {
+                  const profile = reviews[i].getElementsByTagName("profile")[0].textContent;
+                  const name = reviews[i].getElementsByTagName("name-user")[0].textContent;
+                  const userId = reviews[i].getElementsByTagName("ID")[0].textContent;
+                  const comment = reviews[i].getElementsByTagName("comment")[0].textContent;
+                  const stars = reviews[i].getElementsByTagName("stars")[0].textContent;
+                  
+                  // Create review elements
+                  
+                  const reviewDiv = document.createElement("div");
+                  reviewDiv.classList.add("review-box");
+                  reviewDiv.innerHTML = `
+                      <div class="box-top">
+                          <div class="profile">
+                              <div class="profile-img">
+                                <img src="${profile}" alt="${name}'s profile image">
+                              </div>
+                              <div class="name-user">
+                                  <strong>${name}</strong>
+                                  <span>${userId}</span>
+                              </div>
+                          </div>
+                          <div class="reviews">${stars}</div>
+                      </div>
+                      <div class="client-comment">
+                          <p>${comment}</p>
+                      </div>
+                  `;
+                  // Append review to the container
+                  document.querySelector(".review-container").appendChild(reviewDiv);
+              }
+          }
+
+          // Call the function to load and display the XML file
+          loadXMLDoc();
+
+
+        </script>
+    </body>
+</html>   

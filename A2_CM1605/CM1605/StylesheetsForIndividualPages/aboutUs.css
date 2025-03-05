@@ -1,0 +1,478 @@
+main {
+    width: 100%;
+  }
+
+  h1 {
+    font-family: "Open Sans";
+  }
+  .header {
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    margin-right: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .header h1 {
+    font-size: 5rem;
+    color: rgb(0, 3, 37);
+    text-shadow: 0px 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: 700;
+  }
+  .header{
+    font-size: 1.5rem;
+  }
+  .heading-text{
+    margin-left: 5%;
+    margin-top: 15%;
+    width: 45%;
+    margin-bottom: 10%;
+    float: left;
+  }
+  .header img{
+    transform: rotate(2deg);
+    float: left;
+    margin-top: 10%;
+    width:45%;
+    border-bottom-right-radius: 400px;
+    border-bottom-left-radius: 400px;
+
+  }
+  .header img {
+    max-width: 100%;
+    height: auto;
+}
+
+  .header p{
+    color: rgb(0, 3, 37);
+  }
+  @media screen and (max-width: 1024px) {
+    .header h1 {
+        font-size: 4rem; /* Slightly smaller font size for tablets */
+    }
+
+    .topnav {
+        flex-direction: column; /* Stack nav items vertically if necessary */
+    }
+
+    .topnav a, .icon {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust background image or other styles specifically for tablets */
+    .header {
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 768px) {
+  .header {
+      height: 50vh; /* Reduce height for mobile */
+      background-size: cover; /* Ensure background covers the smaller header */
+  }
+
+  .header h1 {
+      font-size: 2.5rem; /* Further reduce font size for mobile */
+  }
+
+  .topnav a, .icon {
+      padding: 5px; /* Reduce padding */
+      font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .topnav {
+      padding: 10px 0; /* Reduce overall padding */
+  }
+
+  /* Consider additional adjustments for mobile navigation, such as a hamburger menu */
+}
+
+
+  .story{
+    clear: both;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 2px 1px 2px 4px rgba(153, 152, 241, 0.1), 0 4px 3px 8px rgba(45, 118, 228, 0.3),0 2px 3px 1px rgba(84, 172, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+  }
+  .story h1,.team h1,#joinUs h1{
+    color: rgb(0, 3, 37);
+    font-size: 4rem;
+    text-shadow: 0px 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: 700;
+    position: relative;
+  }
+  .back-story{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    margin-right: 5%;
+    margin-left: 5%;
+    clear:both;
+    text-align: justify;
+    overflow: none;
+  }
+  
+  @media screen and (max-width:800px){
+    .back-story{
+        display: flex;
+        flex-direction: column;
+        overflow: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .story .back-story .story-text{
+        width: 95%;
+    }
+    .story .back-story .story-image {
+        margin-left:auto;
+        margin-right: auto;
+        
+    }
+  }
+
+  .back-story .story-text{
+    width:600px;
+  }
+  
+  .back-story .story-image img{
+    margin-right: 150px;
+    width: 250px;
+  }
+  @media screen and (max-width: 1024px) {
+    .story h1 {
+        font-size: 3.5rem; /* Slightly smaller titles */
+    }
+
+    .story-text {
+        font-size: 1.1rem; /* Adjust text size for readability */
+    }
+
+    /* If your story includes side-by-side elements, you might want to stack them or adjust their layout */
+    .back-story {
+        flex-direction: column; /* Stack elements vertically */
+    }
+}
+@media screen and (max-width: 768px) {
+  .story {
+      padding: 5% 3%; /* Adjust padding to be a bit tighter */
+      width: 90vw; /* Use more of the screen width */
+  }
+
+  .story h1 {
+      font-size: 2.5rem; /* Further reduce title size */
+  }
+
+  .story-text {
+      font-size: 1rem; /* Ensure text is still legible at a smaller size */
+  }
+
+  /* Adjust image sizes or layouts as needed to fit the smaller screen */
+  .story-image img {
+      margin: 20px 0; /* Add margin to separate text and images clearly */
+  }
+}
+
+
+
+  section *{
+    margin: 0;
+    padding:0;
+  }
+  .team{
+    margin-top: 10%;
+  }
+  .team h1{
+    margin-left: 6%;
+    margin-bottom: 4%;
+  }
+
+  .teamMembers{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(10rem,100%),1fr));
+    gap: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+
+  }
+
+  .card {
+  width: 270px;
+  height: 400px;
+  background: #f6ffff;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .profile-pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  z-index: 1;
+  border: 2px solid white;
+  overflow: hidden;
+  transition: 0.5s ease-in-out 0.3s;
+  }
+
+  .profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease-in-out;
+  }
+
+  .card:hover .profile-pic {
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 5px solid linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;
+  box-shadow: 0 0 10px #222222;
+  transition: 0.5s ease-in-out;
+  z-index: 3;
+  }
+  .card:hover .profile-pic img {
+  transform: scale(1.4);
+  top: 20px;
+  transition: 0.5s ease-in-out 0.5s;
+  background-color: #fff;
+  }
+
+  .details {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  z-index: 2;
+  top: 87%;
+  background: #0a1535;
+  color: white;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out 0.2s;
+  overflow: hidden;
+  }
+
+  .card:hover .details {
+  top: 20%;
+  border-radius: 80px 25px 25px 25px;
+  transition: 0.5s ease-in-out 0.25;
+  }
+
+  .content {
+  position: absolute;
+  top: -300px;
+  left: 20px;
+  opacity: 0;
+  transition: 0.5s ease-in-out Os;
+  }
+  .card:hover .content {
+  top: 10px;
+  opacity: 1;
+  transition: 0.5s ease-in-out 0.5s,
+  opacity 0.5s ease-in-out 1s;
+  }
+
+  .content h2 {
+  margin-left: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  }
+
+  .content .tag {
+  margin-left: 100px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+  }
+
+  .content .about {
+  font-size: 1rem;
+  margin-top: 40px;
+  width: 80%;
+  }
+
+  .buttons {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .buttons .social {
+  display: flex;
+  gap: 15px;
+  }
+
+  .buttons .social i {
+  color: white;
+  cursor: pointer;
+  }
+
+  .buttons .social i:hover {
+  transition: all 0.4s ease-in-out;
+  color: var(--hover-color);
+  color: #fff;
+  }
+
+  .buttons .link {
+  text-decoration: none;
+  color: #0a1535;
+  background: white;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-right: 30px;
+  }
+
+  .buttons .link:hover {
+  transition: all 0.4s ease-in-out;
+  background: #0a1535;
+  color: #f6ffff;
+  }
+
+  @media screen and (max-width:1200px){
+    .team {padding-bottom: 20%}
+    .teamMembers{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    .team h1{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  @media screen and (max-width:800px){
+    
+    .teamMembers{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        align-content: center;
+        width: 80vw;
+        height: auto;
+        margin: auto;
+    }
+    .team h1{
+        text-align: center;
+    }
+
+  }
+
+@media screen and (max-width: 768px) {
+  .teamMembers {
+      grid-template-columns: 1fr; /* 1 member per row */
+      gap: 10px;
+  }
+
+  .card {
+      width: 100%; /* Full width cards */
+  }
+
+  .team h1 {
+      font-size: 2rem;
+  }
+}
+
+  #joinUs{
+    display: block;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+  #joinUs h1, #joinUs p{
+    text-align: center;
+  }
+  #joinUs p{
+    font-size: 1.5rem;
+  }
+  #jobs {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #jobs td, #jobs th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #jobs tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #jobs tr:hover {background-color: #ddd;}
+  
+  #jobs th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background: linear-gradient(to right, #F37A65, #D64141);
+    color: white;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #joinUs {
+        width: 90%;
+        padding: 1.5rem;
+        margin-bottom: 10%;
+    }
+
+    #joinUs h1 {
+        font-size: 2.5rem;
+    }
+
+    #joinUs p {
+        font-size: 1.1rem;
+    }
+
+    #joinUs .join-btn {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+  #joinUs {
+      width: 100%;
+      padding: 1rem;
+      box-shadow: none; /* Optional: Remove the box shadow to fit cleaner into smaller screens */
+      margin-bottom: 10%;
+  }
+
+  #joinUs h1 {
+      font-size: 2rem;
+  }
+
+  #joinUs p {
+      font-size: 1rem;
+  }
+
+  #joinUs .join-btn {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+  }
+}
+
+  
+  

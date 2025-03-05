@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Passion+One:wght@400;700;900&display=swap');
+body{
+	background-image: url('honeycomb-34984_1280.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+.container{
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    background-color: rgb(186, 186, 186);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+	width: 80vw;
+	margin: auto;
+	margin-top:10vh;
+	margin-bottom: 10vh;
+	color:aliceblue;
+}
+.container div{
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1{
+	font-family: "Berkshire Swash";
+	font-size: 4em;
+}
+
+h2{
+	font-size: 1em;
+	font-family: "lato";
+	color: black;
+}
+h3{
+	font-size: 2em;
+	font-family:"Berkshire Swash";
+}
+p{
+	font-size: 1em;
+	font-family: lato;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: #F3ead3;
+    padding: 20px;
+    background: linear-gradient(to bottom, #F3ead3, #d6d6d6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom,#d6d6d6 , #F3ead3);
+
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+h3:hover {
+    color: #014185;
+}
+
+h3::after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0"; /* Add some space after the link */
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE data [
+    <!ENTITY star "&#x2B50;">
+]>
+<data>
+    <reviews>
+        <review>
+            <profile>Images/Profile/p1.jpeg</profile>
+            <name-user>Lily Smith</name-user>
+            <ID> @lilysmith</ID>
+            <comment>"The blood pressure monitor is easy to use and provides accurate readings. It's helped me keep track of my blood pressure at home, which has been incredibly convenient. Definitely worth the investment."</comment>
+            <stars>&star;&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p2.jpeg</profile>
+            <name-user>Max Johnson</name-user>
+            <ID>@maxjohnson</ID>
+            <comment>"I've been using the electronic thermometer for a while now, and it's been reliable so far. It gives quick temperature readings, although I wish the display was a bit larger for easier reading."</comment>
+            <stars>&star;&star;&star;</stars>
+        </review>
+
+
+        <review>
+            <profile>Images/Profile/p3.jpeg</profile>
+            <name-user>Emily Davis </name-user>
+            <ID>@emilydavis</ID>
+            <comment>"The portable oxygen concentrator has given me the freedom to go about my daily activities without worrying about running out of oxygen. It's lightweight and easy to carry around, making it perfect for travel."</comment>
+            <stars>&star;&star;&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p4.jpeg</profile>
+            <name-user>Chris Taylor</name-user>
+            <ID>@christaylor</ID>
+            <comment> "The wheelchair has been a game-changer for my mobility. It's sturdy, comfortable, and easy to maneuver. The adjustable features make it customizable to my needs."</comment>
+            <stars>&star;&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p5.jpeg</profile>
+            <name-user>Sophia Brown</name-user>
+            <ID>@sophiabrown</ID>
+            <comment>"The nebulizer works effectively and efficiently. It's helped me manage my respiratory condition at home without frequent trips to the doctor's office. The compact design is a bonus for storage</comment>
+            <stars>&star;&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p6.jpeg</profile>
+            <name-user>Jack Miller</name-user>
+            <ID>@jackmiller</ID>
+            <comment> "The electronic pulse oximeter is a must-have for anyone monitoring their oxygen levels. It's accurate, easy to use, and provides instant readings. I feel much more confident about my health since using it."</comment>
+            <stars>&star;&star;&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p7.jpeg</profile>
+            <name-user>Ava Jones</name-user>
+            <ID>@avajones</ID>
+            <comment>"The adjustable hospital bed serves its purpose, but I wish the assembly instructions were clearer. Once set up, it's comfortable and provides the necessary support for resting."</comment>
+            <stars>&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p8.jpeg</profile>
+            <name-user>Ethan Wilson</name-user>
+            <ID>@ethanwilson</ID>
+            <comment> "The electric mobility scooter has been a lifesaver for my independence. It's reliable, has a good battery life, and the adjustable speed settings make it suitable for various terrains. I couldn't be happier with my purchase."</comment>
+            <stars>&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p9.jpeg</profile>
+            <name-user>Noah White</name-user>
+            <ID>@noahwhite</ID>
+            <comment>"The CPAP machine works well, but it's a bit noisy compared to what I was expecting. However, it has significantly improved my sleep apnea symptoms, so I can overlook the noise."</comment>
+            <stars>&star;&star;&star;</stars>
+        </review>
+
+        <review>
+            <profile>Images/Profile/p10.jpeg</profile>
+            <name-user>Mia Clark</name-user>
+            <ID>@miaclark</ID>
+            <comment> "The home care bed is comfortable and provides the support my loved one needs. The remote control makes it easy to adjust positions, and the side rails offer added safety. It's been a great help for caregiving."</comment>
+            <stars>&star;&star;&star;&star;</stars>
+        </review>
+        
+    </reviews>
+</data>

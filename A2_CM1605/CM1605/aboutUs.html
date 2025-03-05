@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>About Us</title>
+        <link rel="icon" type="image/x-icon" href="Images/myHealthFavicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="StylesheetsForIndividualPages/aboutUs.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="High-quality medical supplies, advanced medical devices, healthcare essentials, professional diagnostic equipment, affordable patient care products.">
+        <meta name="keywords" content="medical supplies, medical devices, healthcare products, diagnostic equipment, patient care, medical instruments, healthcare essentials, professional medical tools, affordable medical solutions, medical technology">
+        <meta name="author" content="Your-Name">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/5eacabb50d.js" crossorigin="anonymous"></script>
+        <style>
+          .fontSizeContainer{
+            position: fixed;
+            bottom: 1%;
+            right: 1%;
+            padding: 0px;
+            z-index: 5;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.3);
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: lato;
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(209, 213, 219, 0.3);
+          }
+          .fontSizeContainer p{
+            margin-bottom: 2px;
+
+          }
+          .decreaseFont,.resetFont,.increaseFont {
+            outline: none;
+            color: whitesmoke;
+            background-image: linear-gradient(to right,  #e43603, #e85a19);
+            margin: 0px;
+            border: none;
+            padding: 4px;
+
+          }
+          .decreaseFont{
+            border-radius: 16px 4px 4px 16px;
+          }
+          .increaseFont{
+            border-radius: 4px 16px 16px 4px;
+          }
+          .resetFont{
+            border-radius: 4px;
+          }
+          .header{
+            background-image: url(Images/AboutUsPictures/background.jpeg);
+            background-position: center;
+          }
+          
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav> 
+              <div class="topnav">
+                  <div class="left-nav">
+                  <a href="home.html"><img src="Images/myHealthFavicon.png" alt = "My Health" class="main-logo">
+                  <span class="myHealth">MyHealth</span></a>
+                  </div>
+                  
+                  <div class="right-nav hidden" id="right-nav">
+                  <a href="home.html" class="main-pages">Home</a>
+                  <a href="aboutUs.html" class="main-pages active-link">About Us</a>
+                  <a href="products.html" class="main-pages">Products</a>
+                  <a href="Listening.html" class="main-pages">Reviews</a>
+                  <a href="quiz.html" class="main-pages">Quiz</a>
+                  <a href="gallery.html" class="main-pages">Gallery</a>
+                  <a href = "signUp.html" class="main-pages googleIcon"><span class="material-symbols-outlined">
+                    account_circle
+                </span></a>
+                <button id="shopping-cart" onclick="toggleCart()" class="shopping-cart googleIcon">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+              </button>
+                </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuBar()"><span class="material-symbols-outlined">
+                  menu
+                  </span></a>
+                
+            </nav>
+        </header>
+        <main>
+          <div class="header">
+            <div class="heading-text">
+              <h1 class="resizeable">About Us</h1>
+              <p id="sampleP" class="resizeable">Like all good stories it starts off with a dream - a dream to make the world a healthier place</p>
+              <a href="#back-story" class="button"><button class="btn-hover color-2">Read More</button></a>
+              <a href="#teamMembers" class="button"><button class="btn-hover color-2">Meet the Team</button></a>
+            </div>
+          </div>
+
+          <article class="story">
+            
+          <div class="back-story" id="back-story">
+            <div class="story-text">
+              <h1 class="resizeable">Our Story</h1>
+              <p class="resizeable">We are four founders, each with our own unique journey, but united by a singular dream: to contribute meaningfully to the health sector. Our paths converged not in the playgrounds of youth, but in the corridors of academia and the forefront of technological research, where the seeds of a shared ambition took root.</p>
+              <p class="resizeable">Individually, we ventured down different avenues of medicine and technology, collecting experiences, insights, and expertise. Yet, a common theme resonated with each of us: the incredible possibilities at the intersection of healthcare and artificial intelligence.</p>
+              <p class="resizeable">Our collective journey began the day we decided that the future of healthcare could be different—more accessible, more intelligent, and more in tune with the needs of individuals. From that day forward, MyHealth became more than an idea; it became our commitment to you.</p>
+            </div>
+            <div class="story-image"><img src="Images/AboutUsPictures/myHealthPhone.png" alt="MyHealth App"></div>
+          </div>
+          </article>
+
+          <div class="fontSizeContainer">
+            <p>Font Size</p>
+            <button class="decreaseFont" onclick="decreaseFontSize()">-</button>
+            <button class="resetFont" onclick="resetFontSize()" >Reset</button>
+            <button class="increaseFont" onclick="increaseFontSize()" >+</button>
+          </div>
+
+
+          <section class="team">
+            <h1 class="resizeable">Meet the Team</h1>
+            <div class="teamMembers" id="teamMembers">
+            <div class="card">
+              <div class="profile-pic">
+                <img src="Images/AboutUsPictures/sandali.png" alt="Profile Picture of Sandali">
+              </div>
+              <div class="details">
+                <div class="content">
+                  <h2 class="resizeable">Sandali Balasooriya</h2>
+                  <p class="tag resizeable">STUDENT 1</p>
+                  <p class="about resizeable">
+                    Co-founder of My Health, innovating healthcare access with technology for better patient outcomes.
+                  </p>
+                </div>
+                <div class="buttons">
+                  <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <a href="Page-Editors/student1.html" class="link">Page Editor
+                    <i class="fa-solid fa-up-right-from-square">
+                    </i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="profile-pic">
+                <img src="Images/AboutUsPictures/amna.jpeg" alt="Profile Picture of Amna">
+              </div>
+              <div class="details">
+                <div class="content">
+                  <h2 class="resizeable">Amna Shouqi</h2>
+                  <p class="tag resizeable">STUDENT 2</p>
+                  <p class="about resizeable">
+                    Co-founder of My Health, innovating healthcare with technology for accessible, efficient patient care.
+                  </p>
+                </div>
+                <div class="buttons">
+                  <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <a href="Page-Editors/student2.html" class="link">Page Editor
+                    <i class="fa-solid fa-up-right-from-square">
+                    </i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="profile-pic">
+                <img src="Images/AboutUsPictures/khadheeja.png" alt="Profile Picture of Khadheeja">
+              </div>
+              <div class="details">
+                <div class="content">
+                  <h2 class="resizeable">Fathima Khadheeja Alam</h2>
+                  <p class="tag resizeable">STUDENT 3</p>
+                  <p class="about resizeable">
+                    Passionate co-founder revolutionizes healthcare with technology, making wellness accessible and personalized for all.
+                  </p>
+                </div>
+                <div class="buttons">
+                  <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <a href="Page-Editors/student3.html" class="link">Page Editor
+                    <i class="fa-solid fa-up-right-from-square">
+                    </i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="profile-pic">
+                <img src="Images/AboutUsPictures/wasif.png" alt="Profile Pic">
+              </div>
+              <div class="details">
+                <div class="content">
+                  <h2 class="resizeable">Wasif Asi</h2>
+                  <p class="tag resizeable">STUDENT 4</p>
+                  <p class="about resizeable">
+                    A passionate innovator, shaping healthcare with tech, making wellness accessible and management effortless.  
+                  </p>
+                </div>
+                <div class="buttons">
+                  <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <a href="Page-Editors/student4.html" class="link">Page Editor
+                    <i class="fa-solid fa-up-right-from-square">
+                    </i></a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+          <article id="joinUs">
+            <h1 class="resizeable">Become a part of MyHealth</h1>
+            <p class="resizeable">At MyHealth, you'll be part of creating the future of how global enterprises intelligently communicate with their members to improve health and well-being. If you're interested in work that is fun, challenging, and meaningful, we want to meet you!</p>
+            <table id="jobs">
+              <tr>
+                <th>Careers</th>
+                <th>City</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td>Cardiologist</td>
+                <td>Colombo</td>
+                <td>Sri Lanka</td>
+              </tr>
+              <tr>
+                <td>Pediatrician</td>
+                <td>Delhi</td>
+                <td>India</td>
+              </tr>
+              <tr>
+                <td>Neurologist</td>
+                <td>Berlin</td>
+                <td>Germany</td>
+              </tr>
+            </table>
+          </article>
+        </main>
+
+
+        <footer>
+          <article>
+            <h2>Subscribe to receive our Monthly Newsletter.</h2>
+            <button>
+              <p><a href="subscription.html">Subscribe</a></p>
+              <span class="material-symbols-outlined"> trending_flat </span>
+            </button>
+          </article>
+    
+          <section class="top">
+            <img src="Images/myHealthFavicon.png" alt="MyHealth Logo" />
+            <ul>
+              <li>
+                <h3>Resources</h3>
+                <a href="#">Usage</a>
+                <a href="#">Docs</a>
+                <a href="#">Support</a>
+                <a href="Page-Editors/student3.html">Page Editor</a>
+              </li>
+              <li>
+                <h3>Company</h3>
+                <a href="aboutUs.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Partnerships</a>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <h3>Quick Contact</h3>
+                <a><i class="fa fa-phone fa-xs" aria-hidden="true"></i> 717719753</a>
+                <a><i class="fa fa-envelope fa-xs" aria-hidden="true"></i> myhealth@abc.lk</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Colombo 06</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Sri Lanka</a>
+              </li>
+              <li>
+                <h3>Find Us On</h3>
+                <a><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a><i class="fa-brands fa-github"></i> Github</a>
+              </li>
+            </ul>
+          </section>
+    
+          <section class="bottom">© 2024 MyHealth</section>
+        </footer>
+        <script>
+          // Function to increase font size
+          function increaseFontSize() {
+            // Select all paragraphs with the "resizeable" class
+            var paragraphs = document.querySelectorAll('.resizeable');
+
+            // Loop through all selected paragraphs
+            paragraphs.forEach(function(paragraph) {
+              // Get current font size
+              var currentSize = parseFloat(window.getComputedStyle(paragraph, null).getPropertyValue('font-size'));
+              // Increase font size by 1px
+              paragraph.style.fontSize = (currentSize + 1) + 'px';
+            });
+          }
+          function decreaseFontSize() {
+            // Select all paragraphs with the "resizeable" class
+            var paragraphs = document.querySelectorAll('.resizeable');
+
+            // Loop through all selected paragraphs
+            paragraphs.forEach(function(paragraph) {
+              // Get current font size
+              var currentSize = parseFloat(window.getComputedStyle(paragraph, null).getPropertyValue('font-size'));
+              // Decrease font size by 1px
+              paragraph.style.fontSize = (currentSize - 1) + 'px';
+            });
+          }
+          function resetFontSize(){
+            // Select all paragraphs with the "resizeable" class
+            var paragraphs = document.querySelectorAll('p.resizeable');
+            var h1s = document.querySelectorAll('h1.resizeable');
+            var h2s = document.querySelectorAll('h2.resizeable')
+
+            // Loop through all selected paragraphs
+            paragraphs.forEach(function(paragraph){
+              paragraph.style.fontSize = 1 + 'em';});
+            
+            h1s.forEach(function(h1){
+              h1.style.fontSize=4+'em';
+            })
+            h2s.forEach(function(h2){
+              h2.style.fontSize=1.5+'rem';
+            })
+
+          }
+
+          function menuBar() {
+    var nav = document.getElementById("right-nav");
+    // Toggle .hidden class to show/hide the navigation links
+    nav.classList.toggle("hidden");
+      }
+
+      </script>
+      
+    </body>
+</html>   

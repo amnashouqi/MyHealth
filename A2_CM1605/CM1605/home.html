@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>My Health</title>
+        <link rel="icon" type="image/x-icon" href="Images/myHealthFavicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="StylesheetsForIndividualPages/home.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="High-quality medical supplies, advanced medical devices, healthcare essentials, professional diagnostic equipment, affordable patient care products.">
+        <meta name="keywords" content="medical supplies, medical devices, healthcare products, diagnostic equipment, patient care, medical instruments, healthcare essentials, professional medical tools, affordable medical solutions, medical technology">
+        <meta name="author" content="Your-Name">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/5eacabb50d.js" crossorigin="anonymous"></script>
+        <style>
+          main .header{
+            background-image: url('Images/AboutUsPictures/background.jpeg');
+            background-size:cover;
+            background-repeat: no-repeat;
+          }
+
+        </style>
+    </head>
+
+    <body>
+      <header>
+        <nav> 
+          <div class="topnav">
+              <div class="left-nav">
+              <a href="home.html"><img src="Images/myHealthFavicon.png" alt = "My Health" class="main-logo">
+              <span class="myHealth">MyHealth</span></a>
+              </div>
+              
+              <div class="right-nav hidden" id="right-nav">
+              <a href="home.html" class="main-pages active-link">Home</a>
+              <a href="aboutUs.html" class="main-pages">About Us</a>
+              <a href="products.html" class="main-pages">Products</a>
+              <a href="Listening.html" class="main-pages">Reviews</a>
+              <a href="quiz.html" class="main-pages">Quiz</a>
+              <a href="gallery.html" class="main-pages">Gallery</a>
+              <a href = "signUp.html" class="main-pages googleIcon"><span class="material-symbols-outlined">
+                account_circle
+            </span></a>
+            <button id="shopping-cart" onclick="toggleCart()" class="shopping-cart googleIcon">
+              <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+            </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menuBar()"><span class="material-symbols-outlined">
+              menu
+              </span></a>
+            
+        </nav>
+    </header>
+        <main>
+          <div class="header">
+            <div class="heading-text">
+              <h1>Unlock a healthier you with MyHealth</h1>
+              <p><i>~Your trusted AI companion to wellness</i></p>
+              <button class="btn-hover color-2"><a href ="signup.html" class=" button">Sign Up</a></button>
+              <button class="btn-hover color-2"><a href ="login.html" class=" button">Sign In</a></button>
+            </div>
+          </div>
+        </main>
+        
+
+      
+
+      <div class = "whyChooseUs" style="clear:both">
+          <center><div class="header"><h1>Why Choose Us?</h1></center></div>
+          <div class="mainSlide">
+          <div class="slide">
+              <div class="item" style="background-image: url(Images/HomeAndQuizImages/workingInLap.png);">
+                  <div class="content">
+                      <div class="name">Our Story</div>
+                      <div class="des">Learn about our journey, from our humble beginnings to where we are today.</div>
+                      <br><br><br>
+                      <div class="seemore">See more</div>
+                    </div>
+              </div>
+              <div class="item" style="background-image: url(Images/HomeAndQuizImages/Mission.jpg);">
+                  <div class="content">
+                      <div class="name">Mission & Values</div>
+                      <div class="des">Discover our core mission and the values that guide everything we do.</div>
+                      <br><br><br>
+                      <div class="seemore">See more</div>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(Images/HomeAndQuizImages/AIcompanion.jpeg);">
+                  <div class="content">
+                      <div class="name">Quality Assurance</div>
+                      <div class="des">Understand our commitment to quality and excellence in everything we offer.</div>
+                      <br><br><br>
+                      <div class="seemore">See more</div>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(Images/HomeAndQuizImages/nurse-2019420_1920.jpg);">
+                  <div class="content">
+                      <div class="name">Community Engagement</div>
+                      <div class="des">Explore how we give back to the community and support various initiatives.</div>
+                      <br><br><br>
+                      <div class="seemore">See more</div>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(Images/HomeAndQuizImages/microscope-275984_1920.jpg);">
+                  <div class="content">
+                      <div class="name">Innovation & Technology</div>
+                      <div class="des">Learn about our commitment to innovation and how we leverage technology to improve healthcare.</div>
+                      <br><br><br>
+                      <div class="seemore">See more</div>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(Images/HomeAndQuizImages/handshake-3382504_1280.jpg);">
+                  <div class="content">
+                      <div class="name">Partnerships & Collaborations</div>
+                      <div class="des">Explore our partnerships with other organizations and how collaboration enhances our services.</div>
+                      <br><br><br>
+                      <div class="seemore">See more</div>
+                  </div>
+              </div>
+          </div>
+          <div class="arrow">
+              <button class="prev"><i class="fa-solid fa-angles-left"></i></button>
+              <button class="next"><i class="fa-solid fa-angles-right"></i></button>
+          </div>
+      </div>
+      </div>
+<section class="page-links">
+      <div class = "product zig-zag">
+          <div class = "info-text"><h1>Explore Our Products</h1>
+              <p>Explore our range of medical supplies, devices, and patient care essentials. Find what you need to enhance your wellness journey.</p>
+              <a href ="products.html" class="signup-left"><b><big>Visit Store</big></b></a>
+          </div>
+      <div class="box-container">
+          <img src="Images/HomeAndQuizImages/Products.jpg" alt="Image inside box">
+      </div>
+      </div>
+
+      <div class = "quiz zig-zag">
+      <div class="box-container">
+          <img src="Images/HomeAndQuizImages/Quizpic.jpg" alt="Image inside box">
+      </div>
+      <div class = "info-text right-side"><h1>Take Our Health Quiz</h1>
+        <p>Test your knowledge and learn more about health and wellness with our interactive quiz!</p>
+    <a href ="quiz.html" class="signup"><b><big>Take Quiz</big></b></a>
+</div>
+      </div>
+      
+
+      <div class ="gallery zig-zag">
+          <div class = "info-text"><h1>Explore Our Gallery</h1>
+             <p>Dive into our gallery to discover a visual journey showcasing our commitment to health and wellness.</p>       
+              
+              <a href ="gallery.html" class="signup"><b><big>Explore Gallery</big></b></a>
+            </div>
+      <div class="box-container">
+          <img src="Images/HomeAndQuizImages/digitization-6939537_1280.jpg" alt="Image inside box">
+      </div>
+      </div>
+
+      <div class = "review zig-zag">
+      <div class="box-container">
+          <img src="Images/HomeAndQuizImages/laptop-2557571_1920.jpg" alt="Image inside box">
+      </div>
+      <div class = "info-text right-side"><h1>Explore Reviews</h1>
+        <p>Read what our customers have to say about their experiences with MyHealth.</p>
+        <a href ="listing.html" class="signup"><b><big>Check reviews</big></b></a>
+    </div>
+      </div>
+      </section>
+
+      
+      
+      <div class = "hospitalsNear"><center>
+        <div class = "header"><h1>Hospitals near you</h1></div>
+        <iframe class="hospitals" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63381.89330500258!2d79.85478140635084!3d6.846372499329401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitals!5e0!3m2!1sen!2slk!4v1711687957425!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </center>
+    </div>
+    
+    <a href="QueryForm.html" class="corner-link">
+      <div class="corner-box btn button" style="background: #00a0fc;
+      border-radius: 30px; padding-top: 8px;font-size: 16px;">Query Form
+      </div>
+  </a>
+  
+
+      <script src="JavaScriptForIndividualPages/app.js">
+
+      </script>
+        <footer>
+          <article>
+            <h2>Subscribe to receive our Monthly Newsletter.</h2>
+            <button>
+              <p><a href="subscription.html">Subscribe</a></p>
+              <span class="material-symbols-outlined"> trending_flat </span>
+            </button>
+          </article>
+    
+          <section class="top">
+            <img src="Images/myHealthFavicon.png" />
+            <ul>
+              <li>
+                <h3>Resources</h3>
+                <a href="#">Usage</a>
+                <a href="#">Docs</a>
+                <a href="#">Support</a>
+                <a href="Page-Editors/student2.html">Page Editor</a>
+              </li>
+              <li>
+                <h3>Company</h3>
+                <a href="aboutUs.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Partnerships</a>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <h3>Quick Contact</h3>
+                <a><i class="fa fa-phone fa-xs" aria-hidden="true"></i> 717719753</a>
+                <a><i class="fa fa-envelope fa-xs" aria-hidden="true"></i> myhealth@abc.lk</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Colombo 06</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Sri Lanka</a>
+              </li>
+              <li>
+                <h3>Find Us On</h3>
+                <a><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a><i class="fa-brands fa-github"></i> Github</a>
+              </li>
+            </ul>
+          </section>
+    
+          <section class="bottom">© 2024 MyHealth</section>
+        </footer>
+        <script>
+          function menuBar() {
+    var nav = document.getElementById("right-nav");
+    // Toggle .hidden class to show/hide the navigation links
+    nav.classList.toggle("hidden");
+      }
+      </script>
+    </body>
+</html>

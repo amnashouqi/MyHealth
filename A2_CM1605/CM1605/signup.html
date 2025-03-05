@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="icon" type="image/x-icon" href="myHealthFavicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="High-quality medical supplies, advanced medical devices, healthcare essentials, professional diagnostic equipment, affordable patient care products.">
+    <meta name="keywords" content="medical supplies, medical devices, healthcare products, diagnostic equipment, patient care, medical instruments, healthcare essentials, professional medical tools, affordable medical solutions, medical technology">
+    <meta name="author" content="Your-Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/5eacabb50d.js" crossorigin="anonymous"></script>
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="StylesheetsForIndividualPages/signUp.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unicons.iconsout.com/release/v4.0.0/css/line.css">
+    <title>Responsive Registration Form</title>
+    <style>
+        .main-logo {
+            height: 2em; /* Adjust based on your logo's size */
+            width: auto;
+            padding: 12px 10px;
+            margin-left: 5%;
+            box-sizing: content-box;
+        }
+        footer article button a{
+  text-decoration: none;
+  color: #f9f9f9;
+  font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="topnav">
+                <div class="left-nav">
+                <a href="home.html"><img src="Images/myHealthFavicon.png" alt = "My Health" class="main-logo">
+                <span class="myHealth">MyHealth</span></a>
+                </div>
+                
+                <div class="right-nav hidden" id="right-nav">
+                <a href="home.html" class="main-pages">Home</a>
+                <a href="aboutUs.html" class="main-pages">About Us</a>
+                <a href="products.html" class="main-pages">Products</a>
+                <a href="Listening.html" class="main-pages">Reviews</a>
+                <a href="quiz.html" class="main-pages">Quiz</a>
+                <a href="gallery.html" class="main-pages">Gallery</a>
+                <a href="signUp.html" class="main-pages googleIcon active-link"><span class="material-symbols-outlined">
+                  account_circle
+              </span></a>
+              <button id="shopping-cart" onclick="toggleCart()" class="shopping-cart googleIcon">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </button>
+              </div>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="menuBar()"><span class="material-symbols-outlined">
+                menu
+                </span></a>
+              
+          </nav>
+        </header>
+        
+        <section class="formContainer">
+        <div class="container">
+            <div class="title">
+                <p>Registration</p>
+            </div>
+
+        <form id="registrationForm">
+            <div class="user_details">
+                <div class="input_box">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Mr/Mrs/Ms/Master/Dr/Rev">
+                </div>
+                <div class="input_box">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="input_box">
+                    <label for="date_of_birth">Date of Birth</label>
+                    <input type="date" id="date_of_birth">
+                </div>
+                <div class="input_box">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="gender">
+                    <span class="gender_title">Gender</span>
+                    <ul>
+                        <div class="category">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">
+                                <span class="dot"></span>
+                                <span>Male</span>
+                            </label>
+                        </div>
+                        <div class="category">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">
+                                <span class="dot"></span>
+                                <span>Female</span>
+                            </label>
+                        </div>
+                        <div class="category">
+                            <input type="radio" name="gender" id="prefer_not_say" value="prefer_not_say">
+                            <label for="prefer_not_say">
+                                <span class="dot"></span>
+                                <span>Prefer not to say</span>
+                            </label>
+                        </div>
+                    </ul>
+                </div>
+                <div class="input_box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="input_box">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" placeholder="Enter your occupation">
+                </div>
+                <div class="input_box">
+                    <label for="martial_status">Martial Status</label>
+                    <input type="text" id="martial_status" placeholder="Enter your martial status">
+                </div>
+                <div class="input_box">
+                    <label for="address_1">Address Line 1</label>
+                    <input type="text" id="address_1" placeholder="Enter your address line 1">
+                </div>
+                <div class="input_box">
+                    <label for="address_2">Address Line 2</label>
+                    <input type="text" id="address_2" placeholder="Enter your address line 2">
+                </div>
+                <div class="input_box">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter your city">
+                </div>
+                <div class="input_box">
+                    <label for="province">Province</label>
+                    <input type="text" id="province" placeholder="Enter your province">
+                </div>
+                <div class="input_box">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Enter your country">
+                </div>
+                <div class="information">
+                    <span class="method_of_information">From where did you get to know about us?</span>
+                    <div class="category">
+                        <input type="radio" name="information" id="social_media" value="social_media">
+                        <label for="social_media">
+                            <span class="dot"></span>
+                            <span>Social media</span>
+                        </label>
+                        <input type="radio" name="information" id="friend_family" value="friend_family">
+                        <label for="friend_family">
+                            <span class="dot"></span>
+                            <span>A friend or family member</span>
+                        </label>
+                        <input type="radio" name="information" id="other" value="other">
+                        <label for="other">
+                            <span class="dot"></span>
+                            <span>Other</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <label for="user_name">User Name</label>
+                    <input type="text" id="user_name" placeholder="Enter your username">
+                </div>
+                <div class="input_box">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" placeholder="Enter your password">
+                </div>
+                <div class="input_box">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" id="confirmPass" placeholder="Confirm your password">
+                </div>
+            </div>
+            <div class="reg_btn">
+                <input type="submit" value="Register" onclick="validateForm()">
+            </div>
+        </form>
+        </div>
+        </section>
+        
+
+        <footer>
+            <article>
+                <h2>Subscribe to receive our Monthly Newsletter.</h2>
+                <button>
+                  <p><a href="subscription.html">Subscribe</a></p>
+                  <span class="material-symbols-outlined"> trending_flat </span>
+                </button>
+              </article>
+      
+            <section class="top">
+              <img src="Images/myHealthFavicon.png" />
+              <ul>
+                <li>
+                  <h3>Resources</h3>
+                  <a href="#">Usage</a>
+                  <a href="#">Docs</a>
+                  <a href="#">Support</a>
+                  <a href="Page-Editors/student1.html">Page Editor</a>
+                </li>
+                <li>
+                  <h3>Company</h3>
+                  <a href="aboutUs.html">About Us</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Partnerships</a>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <h3>Quick Contact</h3>
+                  <a><i class="fa fa-phone fa-xs" aria-hidden="true"></i> 717719753</a>
+                  <a><i class="fa fa-envelope fa-xs" aria-hidden="true"></i> myhealth@abc.lk</a>
+                  <a><i class="fa-solid fa-location-dot fa-xs"></i> Colombo 06</a>
+                  <a><i class="fa-solid fa-location-dot fa-xs"></i> Sri Lanka</a>
+                </li>
+                <li>
+                  <h3>Find Us On</h3>
+                  <a><i class="fa-brands fa-instagram"></i> Instagram</a>
+                  <a><i class="fa-brands fa-twitter"></i> Twitter</a>
+                  <a><i class="fa-brands fa-facebook"></i> Facebook</a>
+                  <a><i class="fa-brands fa-github"></i> Github</a>
+                </li>
+              </ul>
+            </section>
+      
+            <section class="bottom">© 2024 MyHealth</section>
+          </footer>
+          
+
+        
+
+       
+
+          <script>
+                // Function to validate the form
+function validateForm() {
+    // Your form validation logic here
+    const fullName = document.getElementById('fullname').value.trim();
+    const username = document.getElementById('user_name').value.trim();
+    const password = document.getElementById('pass').value.trim();
+    const confirmPassword = document.getElementById('confirmPass').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const addressLine1 = document.getElementById('address_1').value.trim();
+    const city = document.getElementById('city').value.trim();
+    const province = document.getElementById('province').value.trim();
+    const country = document.getElementById('country').value.trim();
+
+    if (fullName === '' || username === '' || password === '' || confirmPassword === '' || email === '' || addressLine1 === '' || city === '' || province === '' || country === '') {
+        alert('Please fill out all required fields');
+        return false;
+    }
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return false;
+    }
+
+    // Assuming validation is successful, show a personalized message
+    alert(`Dear ${fullName}, thank you for signing up with us. The recommended results will be shown in a while.`);
+
+    return true;
+}
+
+        </script>
+    
+</body>
+</html>

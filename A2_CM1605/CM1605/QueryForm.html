@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>My Health</title>
+        <link rel="icon" type="image/x-icon" href="Images/myHealthFavicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="StylesheetsForIndividualPages/aboutUs.css">
+        <link rel="stylesheet" href="StylesheetsForIndividualPages/home.css">
+        <link rel="stylesheet" href="StylesheetsForIndividualPages/QueryForm.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="High-quality medical supplies, advanced medical devices, healthcare essentials, professional diagnostic equipment, affordable patient care products.">
+        <meta name="keywords" content="medical supplies, medical devices, healthcare products, diagnostic equipment, patient care, medical instruments, healthcare essentials, professional medical tools, affordable medical solutions, medical technology">
+        <meta name="author" content="Your-Name">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/5eacabb50d.js" crossorigin="anonymous"></script>
+        <style>
+          .main-logo {
+            height: 2em; /* Adjust based on your logo's size */
+            width: auto;
+            padding: 12px 10px;
+            margin-left: 5%;
+            box-sizing: content-box;
+        }
+
+        </style>
+    </head>
+
+    <body>
+      <header>
+        <nav> 
+          <div class="topnav">
+              <div class="left-nav">
+              <a href="home.html"><img src="Images/myHealthFavicon.png" alt = "My Health" class="main-logo">
+              <span class="myHealth">MyHealth</span></a>
+              </div>
+              
+              <div class="right-nav hidden" id="right-nav">
+              <a href="home.html" class="main-pages active-link">Home</a>
+              <a href="aboutUs.html" class="main-pages">About Us</a>
+              <a href="products.html" class="main-pages">Products</a>
+              <a href="Listening.html" class="main-pages">Reviews</a>
+              <a href="quiz.html" class="main-pages">Quiz</a>
+              <a href="gallery.html" class="main-pages">Gallery</a>
+              <a href = "signUp.html" class="main-pages googleIcon"><span class="material-symbols-outlined">
+                account_circle
+            </span></a>
+            <button id="shopping-cart" onclick="toggleCart()" class="shopping-cart googleIcon">
+              <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+            </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menuBar()"><span class="material-symbols-outlined">
+              menu
+              </span></a>
+            
+        </nav>
+    </header>
+        <section class="formContainer">
+        <div class="container">
+          <div class="user_details">
+            <div class="title">
+              <p>Contact Us</p>
+          </div><br><br>
+            <form id="contactForm">
+              <div class="input_box">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder = "Enter full name" required>
+              </div>                <div class="input_box">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder = "Enter email" required>
+              </div>                
+              <div class="input_box">
+                
+                <label for="queryTheme">Query Theme:</label>
+                <select id="queryTheme" name="queryTheme" required>
+                    <option value="">Select Theme</option>
+                    <option value="General">General</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="Payment">Payment</option>
+                    <option value="Others">Others</option>
+                </select>
+              </div>                
+              <div class="input_box">
+                <label for="queryDetails">Query Details:</label>
+                <input type="text" textarea id="queryDetails" required style="height: 150px;" name="queryDetails" rows="4" placeholder = "Enter query details" required></input></textarea>
+              </div></div>
+                <div class="reg_btn">
+                <input type="reset" value="Reset"><br><br>
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+        </div>
+        </section>
+    
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const queryTheme = document.getElementById('queryTheme').value;
+                const queryDetails = document.getElementById('queryDetails').value;
+    
+                if (!name || !email || !queryTheme || !queryDetails) {
+                    alert('Please fill in all the required fields.');
+                    return;
+                }
+    
+                const summary = `Name: ${name}\nEmail: ${email}\nTheme: ${queryTheme}\nDetails: ${queryDetails}`;
+                alert(summary);
+                document.getElementById('contactForm').reset();
+            });
+        </script>
+
+        <footer>
+          <article>
+            <h2>Subscribe to receive our Monthly Newsletter.</h2>
+            <button>
+              <p><a href="subscription.html">Subscribe</a></p>
+              <span class="material-symbols-outlined"> trending_flat </span>
+            </button>
+          </article>
+    
+          <section class="top">
+            <img src="Images/myHealthFavicon.png" />
+            <ul>
+              <li>
+                <h3>Resources</h3>
+                <a href="#">Usage</a>
+                <a href="#">Docs</a>
+                <a href="#">Support</a>
+                <a href="Page-Editors/student2.html">Page Editor</a>
+              </li>
+              <li>
+                <h3>Company</h3>
+                <a href="aboutUs.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Partnerships</a>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <h3>Quick Contact</h3>
+                <a><i class="fa fa-phone fa-xs" aria-hidden="true"></i> 717719753</a>
+                <a><i class="fa fa-envelope fa-xs" aria-hidden="true"></i> myhealth@abc.lk</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Colombo 06</a>
+                <a><i class="fa-solid fa-location-dot fa-xs"></i> Sri Lanka</a>
+              </li>
+              <li>
+                <h3>Find Us On</h3>
+                <a><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a><i class="fa-brands fa-github"></i> Github</a>
+              </li>
+            </ul>
+          </section>
+    
+          <section class="bottom">© 2024 MyHealth</section>
+        </footer>
+        <script>
+      </script>
+    </body>
+</html>
